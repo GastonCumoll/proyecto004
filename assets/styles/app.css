@@ -1,0 +1,48 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+header{
+    background-color: white;
+    border-bottom: 2px solid grey;
+}
+
+figure{
+    display: inline;
+}
+
+img{
+    width:10rem;
+    height:5rem;
+}
+
+#titulo{
+    display: inline;
+    margin-left:44rem;
+}
+
+footer{
+    margin-top:auto;
+    padding: 10px ; 
+    width: 100%; 
+    height: 48px; 
+    background-color: white;
+    border-top:2px solid grey;
+    margin: top 10px;
+}
+
+p{
+    text-align: center;
+}
+
+
+
+
+

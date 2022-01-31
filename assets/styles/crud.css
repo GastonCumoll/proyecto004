@@ -1,0 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.container{
+    font-family: Arial, Helvetica, sans-serif; margin-top:2rem; font-weight:bold;
+}
+
+.row{
+    background-color:lightcyan;
+}

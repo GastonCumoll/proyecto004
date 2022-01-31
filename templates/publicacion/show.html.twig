@@ -1,0 +1,47 @@
+{% extends 'base1.html.twig' %}
+
+{% block title %}Publicacion{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+    {{ encore_entry_link_tags('crudCss') }}
+{% endblock  %}
+{% block body %}
+    <h1 class="font-weight-bold text-center">Publicacion</h1>
+    <div class="container">
+        <div class="mt-3 p-3 border border-secondary rounded bg-light">
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ publicacion.id }}</td>
+            </tr>
+            <tr>
+                <th>Titulo</th>
+                <td>{{ publicacion.titulo }}</td>
+            </tr>
+            <tr>
+                <th>Tipo de publicacion</th>
+                <td>{{ publicacion.tipoPublicacion }}</td>
+            </tr>
+            <tr>
+                <th>Fecha y hora</th>
+                <td>{{ publicacion.fechaYHora ? publicacion.fechaYHora|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('publicacion_index') }}">
+        <button type="button" class="btn btn-info"> Back to list <i class="fas fa-arrow-left"></i> </button>  
+    </a>
+
+    <a href="{{ path('publicacion_edit', {'id': publicacion.id}) }}">
+        <button type="button" class="btn btn-success"> Edit <i class="fas fa-edit"></i></button> 
+        <br><br>
+    </a>
+
+    {{ include('publicacion/_delete_form.html.twig') }}
+</div>
+</div>
+{% endblock %}
+
+
