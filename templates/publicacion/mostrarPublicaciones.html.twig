@@ -1,7 +1,10 @@
 {% extends 'base1.html.twig' %}
 
 {% block title %}Publicacion index{% endblock %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('crudCss') }}
+{% endblock  %}
 {% block body %}
 
 {% for publicacion in publicaciones %}

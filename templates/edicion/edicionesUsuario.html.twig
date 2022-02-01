@@ -1,7 +1,10 @@
 {% extends 'base1.html.twig' %}
 
 {% block title %}Mis ediciones{% endblock %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('crudCss') }}
+{% endblock  %}
 {% block body %}
 <h1 class="text-center">Mis ediciones</h1>
 {% for edicion in ediciones | reverse %}

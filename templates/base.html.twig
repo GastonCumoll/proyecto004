@@ -7,8 +7,8 @@
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>  -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
         <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
         {# Run `composer require symfony/webpack-encore-bundle`
@@ -22,10 +22,10 @@
     <body>
         <header>
             <figure>
-                <img src="{{asset('/imagen.png')}}">
+                <img src="{{asset('/municipalidad.png')}}">
             </figure>
 
-            <h2 id="titulo">Ejercicio-003</h2>
+            <h2 id="titulo">Ejercicio-004</h2>
         </header>
         {% block nav %}
         {% endblock %}
@@ -34,14 +34,14 @@
             
         {% endblock %}
             <footer>
-                <p>© Municipalidad de Paraná - Ejercicio 003 - 1.0 - 2021</p>
+                <p>© Municipalidad de Paraná - Ejercicio 004 - 1.0 - 2021</p>
             </footer>
         
         
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-            <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.2.1/dt-1.10.16/datatables.min.js"></script>
-            <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+            
+            
         {% endblock %}
         
     </body>

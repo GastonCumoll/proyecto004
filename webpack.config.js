@@ -23,9 +23,11 @@ Encore
     .addEntry('app', './assets/app.js')
     .addEntry('index', './assets/index.js')
     .addEntry('crud', './assets/crud.js')
+    .addEntry('login', './assets/login.js')
 
     .addStyleEntry('base', './assets/styles/app.css')
     .addStyleEntry('crudCss', './assets/styles/crud.css')
+    .addStyleEntry('loginCss', './assets/styles/login.css')
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
 
